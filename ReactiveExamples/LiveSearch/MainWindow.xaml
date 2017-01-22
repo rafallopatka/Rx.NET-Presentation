@@ -1,0 +1,23 @@
+﻿<controls:MetroWindow  x:Class="LiveSearch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiveSearch"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="55" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBox x:Name="SearchBox" Margin="10" Grid.Row="0" FontSize="20" />
+        <ListBox x:Name="SearchResults" Margin="10" Grid.Row="1" />
+
+        <Grid x:Name="ProgressIndicator" Visibility="Collapsed" Grid.Row="1" Background="White" Opacity="0.7">
+            <controls:ProgressRing   VerticalAlignment="Center" />
+        </Grid>
+    </Grid>
+</controls:MetroWindow>
+
